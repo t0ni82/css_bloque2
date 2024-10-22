@@ -1,0 +1,14 @@
+/* @import url(./animation.css); */
+
+body {
+    background-color: #333;
+    color: aliceblue;
+}
+
+
+.animado {
+    animation-name: mianim;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    transform-origin: center bottom;
+}

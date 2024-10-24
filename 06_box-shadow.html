@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .box {
+            background-color: coral;
+            padding: 1rem;
+            margin: 2rem;
+            /* offset-x | offset-y | color*/
+            box-shadow: 10px 10px teal;
+            /* offset-x | offset-y | blur-radius | color*/
+            box-shadow: 10px 10px 10px teal;
+            /* valores negativos */
+            box-shadow: -5px -5px 10px red;
+            /* offset-x | offset-y | blur-radius | spread-radius | color*/
+            box-shadow: 10px 10px 10px 6px teal;
+            /* inset | offset-x | offset-y | color */
+            box-shadow: inset -5px -5px 10px 2px red;
+            /* multiples sombras */
+            box-shadow: 10px 10px red, -10px -10px greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>Título</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, quaerat in. Corrupti autem velit,
+                voluptatum praesentium magnam delectus saepe nemo, asperiores dolore maxime eius molestiae voluptates
+                fuga! Neque, eaque obcaecati!</p>
+        </div>
+        <div class="box">
+            <h3>Título</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus excepturi quibusdam odio dolorem
+                architecto quis, incidunt dolor quod est impedit quas iusto totam ipsum, esse voluptates ex voluptatem,
+                cum iste.</p>
+        </div>
+        <div class="box">
+            <h3>Título</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquam officia pariatur officiis impedit!
+                Possimus dolor quasi obcaecati, libero ea, asperiores modi porro sapiente voluptates consequatur
+                consequuntur, error quod earum?</p>
+        </div>
+    </div>
+</body>
+
+</html>

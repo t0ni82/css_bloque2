@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex container</title>
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        .flex-container {
+            height: 100vh;
+            display: flex;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            /* flex-flow: row wrap; */
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            background-color: blanchedalmond;
+        }
+
+        .item {
+            background-color: cadetblue;
+            border: #333 2px solid;
+            /* margin: 10px; */
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            order: 4;
+        }
+
+        .item-1 {
+            order: 2;
+            /* flex-grow: 6;
+            flex-shrink: 0;
+            flex-basis: 200px; */
+            flex: 6 0 200px;
+        }
+
+        .item-2 {
+            order: 3;
+            align-self: flex-end;
+        }
+
+        .item-3 {
+            flex-grow: 1;
+            order: 1;
+            font-size: 0.4rem;
+        }
+
+        .item-4 {
+            flex-grow: 1;
+        }
+
+        .item-5 {
+            flex-grow: 1;
+        }
+
+        .item-6 {
+            flex-grow: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="item item-1">
+            <h3>Item 1</h3>
+        </div>
+        <div class="item item-2">
+            <h3>Item 2</h3>
+        </div>
+        <div class="item item-3">
+            <h3>Item 3</h3>
+        </div>
+        <div class="item item-4">
+            <h3>Item 4</h3>
+        </div>
+        <div class="item item-5">
+            <h3>Item 5</h3>
+        </div>
+        <div class="item item-6">
+            <h3>Item 6</h3>
+        </div>
+    </div>
+</body>
+
+</html>

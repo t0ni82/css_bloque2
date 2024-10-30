@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flex Header</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap");
+
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .header {
+      background-color: blanchedalmond;
+      border-bottom: 1px solid #333;
+      padding: 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .profile-image {
+      background-color: rebeccapurple;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
+      background-image: url("https://ui-avatars.com/api/?name=Mario+Bross&background=663399&color=fff");
+      background-position: center;
+    }
+
+    .logo {
+      font-size: 2rem;
+      color: rebeccapurple;
+      font-style: italic;
+      font-weight: 900;
+    }
+
+    .right,
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem
+    }
+
+    button {
+      border: none;
+      border-radius: 8px;
+      background-color: rebeccapurple;
+      color: white;
+      padding: 8px 24px;
+    }
+
+    a {
+      padding: 0 20px;
+      text-decoration: none;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="left">
+      <div class="logo">LOGO</div>
+      <ul class="links">
+        <li><a href="#">link-uno</a></li>
+        <li><a href="#">link-dos</a></li>
+        <li><a href="#">link-tres</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <button class="notifications">1 notificación nueva</button>
+      <div class="profile-image"></div>
+    </div>
+  </div>
+</body>
+
+</html>

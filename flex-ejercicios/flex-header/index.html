@@ -44,7 +44,13 @@
     .left {
       display: flex;
       align-items: center;
-      gap: 1.6rem
+      gap: 1.6rem;
+      background-color: cadetblue;
+    }
+
+    .right {
+      /* flex-grow: 1; */
+      background-color: aquamarine;
     }
 
     button {
@@ -53,6 +59,20 @@
       background-color: rebeccapurple;
       color: white;
       padding: 8px 24px;
+      position: relative;
+    }
+
+    .aviso {
+      background-color: red;
+      color: white;
+      display: inline-block;
+      /* display: none; */
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      position: absolute;
+      bottom: -10px;
+      left: -10px;
     }
 
     a {
@@ -78,7 +98,9 @@
       </ul>
     </div>
     <div class="right">
-      <button class="notifications">1 notificación nueva</button>
+      <button class="notifications">
+        <div class="aviso">!</div>1 notificación nueva
+      </button>
       <div class="profile-image"></div>
     </div>
   </div>

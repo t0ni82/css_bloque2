@@ -4,6 +4,8 @@
 :root {
   --color-primario: rgba(9, 30, 34, 0.678);
   --color-secundario: rgba(229, 148, 0, 0.9);
+  --hamburger-size: 60px;
+  --menu-speed: 0.75s;
 }
 
 * {

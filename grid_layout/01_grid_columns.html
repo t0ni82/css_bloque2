@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid columns</title>
+    <style>
+        .grid-container {
+            display: grid;
+            /* grid-template-columns: 300px auto 100px 200px auto; */
+            /* grid-template-columns: 1fr 3fr 1fr 4fr; */
+            grid-template-columns: repeat(6, auto);
+            gap: 1rem;
+        }
+
+        .item {
+            padding: 3rem;
+            background-color: bisque;
+            border: 2px solid #000;
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+
+    <main>
+        <section>
+            <h3>Hello from grid layout</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem in pariatur inventore ab
+                voluptate cum quam porro recusandae, tempore facilis dolores perferendis placeat enim officiis, cumque
+                nisi labore natus suscipit!</p>
+        </section>
+        <aside>
+            <h3>Contacta con nosotros</h3>
+            <ul>
+                <li>Acme S.A</li>
+                <li>Avenida Puerto Rico, 3 Palma</li>
+                <li>info@acme.com</li>
+                <li>555-555-555</li>
+            </ul>
+        </aside>
+    </main>
+</body>
+
+</html>

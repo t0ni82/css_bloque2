@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 200px;
+            height: 300px;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            object-fit: contain;
+            flex: 1;
+            aspect-ratio: 16 / 9;
+            border-radius: 8px;
+        }
+
+        .gallery-item p {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div class="gallery">
+            <div class="gallery-item">
+                <!-- <img src="img/person-1.jpg" alt="Descripción 1"> -->
+                <img src="https://loremflickr.com/600/400/dog" alt="Descripción 1">
+                <p>Descripción de la imagen 1
+                    dslgjdskg
+                    oidsgsag
+                    kdjgjñlkñjg
+                    dfogjdkfj
+                </p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://loremflickr.com/320/240/dog" alt="Descripción 1">
+                <!-- <img src="img/person-2.jpg" alt="Descripción 2"> -->
+                <p>Descripción de la imagen 2</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://loremflickr.com/200/240/dog" alt="Descripción 1">
+                <!-- <img src="img/photo-1.jpg" alt="Descripción 3"> -->
+                <p>Descripción de la imagen 3</p>
+            </div>
+            <div class="gallery-item">
+                <img src="img/showcase.jpg" alt="Descripción 3">
+                <p>Descripción de la imagen 3</p>
+            </div>
+            <div class="gallery-item">
+                <img src="img/test-bg.jpg" alt="Descripción 3">
+                <p>Descripción de la imagen 3</p>
+            </div>
+        </div>
+
+    </body>
+</body>
+
+</html>

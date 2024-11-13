@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .video-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+
+        .background-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 20px auto 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="video-section">
+        <video autoplay muted loop class="background-video">
+            <source src="videos/video_pcs.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <div class="content">
+            <h1>Título dl Tema</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque error ut non veniam tempore eligendi
+                nulla, quo, similique aspernatur adipisci explicabo vel quam debitis! Ducimus molestias praesentium
+                soluta facilis dolorem!</p>
+        </div>
+    </section>
+
+</body>
+
+</html>
